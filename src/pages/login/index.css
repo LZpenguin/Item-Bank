@@ -1,0 +1,63 @@
+.page_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/background.png');
+    background-size: cover;
+    background-position: center center;
+}
+.page_login .center_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page_login .center_area .title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+.page_login .center_area .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+    height: 360px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+}
+.page_login .center_area .box .switch {
+    width: 370px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #7948ea;
+}
+.page_login .center_area .box .switch > span {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.page_login .center_area .box .group {
+    width: 370px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.page_login .center_area .box .group input {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+.page_login .center_area .box .btn_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 60px;
+    font-size: 21px;
+    color: #fff;
+    background-color: #7948ea;
+    border-radius: 5px;
+    cursor: pointer;
+}
