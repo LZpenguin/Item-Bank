@@ -66,22 +66,6 @@
     border-radius: 15px;
     cursor: pointer;
 }
-.page_item .filter_detail .option {
-    display: flex;
-    margin-left: 40px;
-    padding: 0;
-}
-.page_item .filter_detail .option > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0 20px;
-    border-right: 2px solid #f6f6f6;
-}
-.page_item .filter_detail .option > div:last-child {
-    border-right: 0;
-}
 
 /* item_list */
 .page_item .item_list {

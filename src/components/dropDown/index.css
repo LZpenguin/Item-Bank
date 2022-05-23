@@ -1,0 +1,32 @@
+.component_dropDown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.component_dropDown .show {
+    z-index: 1;
+}
+.component_dropDown .select_list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all linear 0.1s;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.component_dropDown .select_list > .option {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 0;
+    padding: 0 20px;
+}

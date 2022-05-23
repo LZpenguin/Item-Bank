@@ -1,0 +1,26 @@
+.component_rowOptions {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-left: 40px;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.component_rowOptions .option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    border-right: 2px solid #f6f6f6;
+    cursor: pointer;
+}
+.component_rowOptions .choosen {
+    color: #fff;
+    background-color: #5bcde4;
+}
+.component_rowOptions .option:last-child {
+    border-right: 0;
+}

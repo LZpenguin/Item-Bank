@@ -23,7 +23,7 @@ const list = [
 
 const Index = props => {
     return (
-        <div className="page_item">
+        <div className="page_grade">
             <div className="filter_navi">
                 {list.map(item => {
                     return (
@@ -36,8 +36,8 @@ const Index = props => {
             </div>
             <div className="filter_detail">
                 <div className="title">请选择:</div>
-                <div className="select dropdown1">全国卷</div>
-                <div className="select dropdown2">2020年</div>
+                <div className="select dropdown1">高中</div>
+                <div className="select dropdown2">高一</div>
                 <div className="select option">
                     <div>语文</div>
                     <div>数学</div>

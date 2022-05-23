@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './index.css'
+
+import DropDown from '../../components/dropDown'
+import RowOptions from '../../components/rowOptions'
 
 const list = [
     {
@@ -21,7 +24,26 @@ const list = [
     }
 ]
 
+const dropList = [
+    {
+        name: '全国卷',
+        list: [{ name: '2020' }, { name: '2021' }, { name: '2022' }]
+    },
+    {
+        name: '北京卷',
+        list: [{ name: '2020' }, { name: '2021' }, { name: '2022' }]
+    },
+    {
+        name: '浙江卷',
+        list: [{ name: '2020' }, { name: '2021' }, { name: '2022' }]
+    }
+]
+const rowList = ['语文', '数学', '英语', '理综', '文综']
+
 const Index = props => {
+    const [chs1, setChs1] = useState(dropList[0])
+    const [chs2, setChs2] = useState(chs1.list[0])
+    const [chs3, setChs3] = useState(rowList[0])
     return (
         <div className="page_item">
             <div className="filter_navi">
@@ -36,13 +58,17 @@ const Index = props => {
             </div>
             <div className="filter_detail">
                 <div className="title">请选择:</div>
-                <div className="select dropdown1">全国卷</div>
-                <div className="select dropdown2">2020年</div>
-                <div className="select option">
-                    <div>语文</div>
-                    <div>数学</div>
-                    <div>英语</div>
-                </div>
+                <DropDown
+                    list={dropList}
+                    choosen={chs1.name}
+                    setChoosen={name => {
+                        let target = dropList.find(item => item.name === name)
+                        setChs1(target)
+                        setChs2(target.list[0])
+                    }}
+                />
+                <DropDown list={chs1.list} choosen={chs2.name} setChoosen={setChs2} />
+                <RowOptions list={rowList} choosen={chs3} setChoosen={setChs3} />
             </div>
             <div className="item_list">
                 <div className="border">
