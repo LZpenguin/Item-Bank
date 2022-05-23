@@ -1,0 +1,24 @@
+.component_header .header_info {
+    height: 45px;
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+.component_header .header_navi {
+    display: flex;
+    padding: 0 40px 0 10px;
+    border-bottom: 1px solid #bfbfbf;
+}
+.component_header .header_navi > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 45px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+}
+.component_header .header_navi > .choosen {
+    border-bottom: 2px solid #000;
+}

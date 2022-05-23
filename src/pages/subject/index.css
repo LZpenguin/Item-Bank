@@ -1,0 +1,121 @@
+.page_item {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* filter_navi */
+.page_item .filter_navi {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 10px;
+}
+.page_item .filter_navi .navi {
+    display: flex;
+    align-items: center;
+    width: 260px;
+    height: 75px;
+    padding: 0 20px;
+    font-size: 23px;
+    color: #fff;
+    background-color: #a585ff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.page_item .filter_navi .choosen {
+    border: 2px solid #7948ea;
+}
+.page_item .filter_navi .navi:hover {
+    filter: brightness(1.1);
+}
+.page_item .filter_navi .navi > img {
+    width: 55px;
+    height: 55px;
+}
+.page_item .filter_navi .navi .title {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.page_item .filter_navi .grade {
+    background-color: #80cffe;
+}
+.page_item .filter_navi .type {
+    background-color: #5385e4;
+}
+
+/* filter_detail */
+.page_item .filter_detail {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 16px;
+}
+.page_item .filter_detail .title {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.page_item .filter_detail .select {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-right: 10px;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.page_item .filter_detail .option {
+    display: flex;
+    margin-left: 40px;
+    padding: 0;
+}
+.page_item .filter_detail .option > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    border-right: 2px solid #f6f6f6;
+}
+.page_item .filter_detail .option > div:last-child {
+    border-right: 0;
+}
+
+/* item_list */
+.page_item .item_list {
+    height: 420px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.page_item .item_list .border {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow-y: scroll;
+}
+.page_item .item_list .item {
+    padding: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+}
+.page_item .item_list .item > * {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+.page_item .item_list .item > .options {
+    padding: 10px;
+}
+.page_item .item_list .item > .options > .option {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f6f6f6;
+}
+.page_item .item_list .item > .options > .option:last-child {
+    margin-bottom: 0;
+}

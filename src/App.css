@@ -11,3 +11,6 @@
 input {
     border: none;
 }
+::-webkit-scrollbar {
+    display: none;
+}

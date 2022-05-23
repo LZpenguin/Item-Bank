@@ -8,11 +8,11 @@
     background-color: #7948ea;
 }
 .page_pages .main {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     background-color: #f6f6f6;
 }
-.page_pages .main .header {
-    height: 60px;
-    background-color: #fff;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+.page_pages .main .pages {
+    flex: 1;
 }

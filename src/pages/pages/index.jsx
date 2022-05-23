@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Outlet } from 'react-router'
 import './index.css'
 
-const Index = () => {
+import Header from '../../components/header'
+
+const Index = props => {
     return (
         <div className="page_pages">
             <div className="left_bar">leftbar</div>
             <div className="main">
-                <div className="header">header</div>
+                <Header choosen={props.choosen} setChoosen={props.setChoosen}></Header>
                 <div className="pages">
-                    <Outlet></Outlet>
+                    <Outlet choosen={props.choosen} setChoosen={props.setChoosen}></Outlet>
                 </div>
             </div>
         </div>
