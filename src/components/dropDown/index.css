@@ -1,21 +1,24 @@
 .component_dropDown {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100px;
     height: 30px;
-    padding: 0 20px;
     margin-right: 10px;
     background-color: #fff;
     border-radius: 15px;
     cursor: pointer;
 }
 .component_dropDown .show {
+    white-space: nowrap;
     z-index: 1;
 }
 .component_dropDown .select_list {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     height: 30px;
     background-color: #fff;
     border-radius: 15px;
@@ -25,8 +28,10 @@
 }
 .component_dropDown .select_list > .option {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 30px;
     margin: 0;
     padding: 0 20px;
+    white-space: nowrap;
 }

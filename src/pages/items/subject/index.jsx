@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './index.css'
+
+import DropDown from '../../../components/dropDown'
 
 const list = [
     {
@@ -21,9 +23,28 @@ const list = [
     }
 ]
 
+const dropList = [
+    {
+        name: '语文'
+    },
+    {
+        name: '数学'
+    },
+    {
+        name: '英语'
+    },
+    {
+        name: '理综'
+    },
+    {
+        name: '文综'
+    }
+]
+
 const Index = props => {
+    const [chs1, setChs1] = useState(dropList[0])
     return (
-        <div className="page_grade">
+        <div className="page_subject">
             <div className="filter_navi">
                 {list.map(item => {
                     return (
@@ -36,13 +57,14 @@ const Index = props => {
             </div>
             <div className="filter_detail">
                 <div className="title">请选择:</div>
-                <div className="select dropdown1">高中</div>
-                <div className="select dropdown2">高一</div>
-                <div className="select option">
-                    <div>语文</div>
-                    <div>数学</div>
-                    <div>英语</div>
-                </div>
+                <DropDown
+                    list={dropList}
+                    choosen={chs1.name}
+                    setChoosen={name => {
+                        let target = dropList.find(item => item.name === name)
+                        setChs1(target)
+                    }}
+                />
             </div>
             <div className="item_list">
                 <div className="border">

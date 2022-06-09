@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './index.css'
 
-import DropDown from '../../components/dropDown'
-import RowOptions from '../../components/rowOptions'
+import DropDown from '../../../components/dropDown'
+import RowOptions from '../../../components/rowOptions'
 
 const list = [
     {
@@ -67,7 +67,14 @@ const Index = props => {
                         setChs2(target.list[0])
                     }}
                 />
-                <DropDown list={chs1.list} choosen={chs2.name} setChoosen={setChs2} />
+                <DropDown
+                    list={chs1.list}
+                    choosen={chs2.name}
+                    setChoosen={name => {
+                        let target = chs1.list.find(item => item.name === name)
+                        setChs2(target)
+                    }}
+                />
                 <RowOptions list={rowList} choosen={chs3} setChoosen={setChs3} />
             </div>
             <div className="item_list">

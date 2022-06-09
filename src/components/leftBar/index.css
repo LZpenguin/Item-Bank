@@ -1,0 +1,43 @@
+.component_leftBar {
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    background-color: #7948ea;
+}
+.component_leftBar .group .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.component_leftBar .group .title:hover {
+    background-color: #865aff;
+}
+.component_leftBar .group .title img {
+    width: 12px;
+    height: 6px;
+    margin-left: 10px;
+    transform: rotate(-90deg);
+    transition: all linear 0.1s;
+}
+.component_leftBar .group .list {
+    height: 0;
+    font-size: 12px;
+    color: #e2e2e2;
+    overflow: hidden;
+    transition: all linear 0.1s;
+}
+.component_leftBar .group .list .item_navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    color: #e2e2e2;
+    cursor: pointer;
+}
+.component_leftBar .group .list .item_navi:hover {
+    background-color: #a585ff;
+}

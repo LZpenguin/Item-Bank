@@ -22,17 +22,26 @@ const list = [
     {
         to: '/type',
         name: '题型'
+    },
+    {
+        to: '/publish',
+        name: '发布'
     }
 ]
 
 const Index = props => {
     return (
         <div className="component_header">
-            <div className="header_info">info</div>
+            <div className="header_info">
+                <div className="route">
+                    <img src="home.png" alt="" />
+                    {props.tip}
+                </div>
+            </div>
             <div className="header_navi">
-                {list.map(item => {
+                {props.routes.map(item => {
                     return (
-                        <Link key={item.to} to={item.to} className={item.to === props.choosen ? 'choosen' : ''} onClick={() => props.setChoosen(item.to)}>
+                        <Link key={item.route} to={item.route} className={item.route === props.choosen ? 'choosen' : ''} onClick={() => props.setChoosen(item.route)}>
                             {item.name}
                         </Link>
                     )
